@@ -1,0 +1,86 @@
+.contact-me
+    padding: 40px
+    display: flex
+    flex-wrap: wrap
+    &__text
+        font-size: 40px
+    &__form
+        width: 100%
+        display: flex
+        flex-wrap: wrap
+    &__input
+        font-size: 24px
+        padding-left: 10px
+        box-sizing: border-box
+        height: 70px
+        margin-bottom: 30px
+        width: 100%
+        background: #F4F4F4
+        border: none
+        outline: none
+        border-radius: 5px
+        &:hover
+            border: solid 2px #F49D05
+        &_type_area
+            height: 200px
+            resize: none
+        &_w_48
+            width: 48%
+    &__wrap
+        width: 100%
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+
+    &__button
+        background: #222
+        width: 200px
+        height: 60px
+        border: none
+        color: #fff
+        font-size: 16px
+        cursor: pointer
+        &:active
+            border: inset 1px
+
+@media (max-width: 1680px)
+    .contact-me
+        &__input
+            margin-bottom: 20px
+            font-size: 20px
+@media (max-width: 1280px)
+    .contact-me
+        &__input
+            height: 60px
+            font-size: 20px
+            &_type_area
+                height: 200px
+
+@media (max-width: 980px)
+    .contact-me
+        &__button
+            width: 100%
+            height: 40px
+        &__input
+            font-size: 18px
+            &_w_48
+                width: 100%
+@media (max-width: 735px)
+    .contact-me
+        padding: 20px
+        &__text
+            font-size: 30px
+        &__input
+            height: 50px
+            &_type_area
+                height: 150px
+
+@media (max-width: 360px)
+    .contact-me
+        padding: 20px
+        &__text
+            font-size: 20px
+        &__input
+            height: 40px
+            &_type_area
+                height: 100px

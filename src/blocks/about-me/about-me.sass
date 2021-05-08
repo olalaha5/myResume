@@ -1,0 +1,86 @@
+.about-me
+    &__wrapper
+        height: 570px
+        display: flex
+        justify-content: space-between
+    &__wrap
+        box-sizing: border-box
+        display: flex
+        align-items: center
+        padding: 10px 0
+        padding-left: 10%
+        width: 63%
+    &__name
+        font-weight: 400
+        font-size: 400%
+        color: #404040
+        margin: 0
+        margin-bottom: 20px
+    &__text
+        font-weight: 300
+        font-size: 200%
+        color: #979797
+        margin: 0
+    &__link
+        display: block
+        width: 37%
+        background-image: url("img/blocks/about-me/me.png")
+        background-size: 100%
+        background-repeat: no-repeat
+        background-position: 50% 50%
+
+@media (max-width: 1680px)
+    .about-me
+        &__wrapper
+            height: 474px
+
+@media (max-width: 1280px)
+    .about-me
+        &__wrapper
+            height: 374px
+        &__name
+            font-size: 250%
+        &__text
+            font-size: 125%
+
+@media (max-width: 980px)
+    .about-me
+        &__wrapper
+            width: 100%
+            height: auto
+            justify-content: center
+            flex-wrap: wrap
+            overflow: hidden
+        &__wrap
+            padding-left: 0
+            width: 100%
+            min-height: 250px
+            justify-content: center
+        &__inner
+            width: 250px
+            display: flex
+            justify-content: center
+            flex-wrap: wrap
+        &__link
+            display: block
+            height: 450px
+            width: 100%
+        &__name
+            font-size: 40px
+        &__text
+            font-size: 20px
+
+@media (max-width: 735px)
+    .about-me
+        &__link
+            height: 362px
+        &__wrap
+            min-height: 138px
+        &__name
+            font-size: 30px
+        &__text
+            font-size: 15px
+@media (max-width: 360px)
+    .about-me
+        &__link
+            height: 262px

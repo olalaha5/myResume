@@ -1,0 +1,38 @@
+extends ../blocks/common/layout
+
+block content 
+    .block 
+        .block__wrapper
+            .block__wrap
+                header.header
+                    .header__wrapper
+                        .header__wrap
+                            include ../blocks/nav/nav
+                section.container
+                    .container__wrapper
+                        include ../blocks/about-me/about-me
+                        .works(style="display: none;")
+                            h2.works__title MY WORK
+                            .works__blocks
+                                .my-work.works__block
+                                    h3.my-work__name my GitHub
+                                    a(href='https://github.com/olalaha5').my-work__link github.com/olalaha5
+                                .my-work.works__block
+                                    h3.my-work__name my snake
+                                    a(href='https://olalaha5.github.io/mySnake/').my-work__link olalaha5.github.io/mySnake
+                                .my-work.works__block
+                                    h3.my-work__name my pong
+                                    a(href='https://olalaha5.github.io/myPong/').my-work__link olalaha5.github.io/myPong
+                                .my-work.works__block
+                                    h3.my-work__name my clock
+                                    a(href='https://olalaha5.github.io/myClock/').my-work__link olalaha5.github.io/myClock
+                                .my-work.works__block
+                                    h3.my-work__name my BEM site
+                                    a(href='https://olalaha5.github.io/myBEMsite/').my-work__link olalaha5.github.io/myBEMsite
+                        include ../blocks/contact-me/contact-me
+
+
+
+                            
+
+
