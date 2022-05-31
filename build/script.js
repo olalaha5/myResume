@@ -8,7 +8,7 @@ let w = 0
 let stack = ['', '']
 
 //функция нужная для анимации
-let duration = 2000
+let duration = 800
 
 function display(i) {
     for (let item of elem) {
