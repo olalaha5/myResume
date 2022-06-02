@@ -69,7 +69,6 @@ function click() {
         };
     };
 }
-click()
 
 
 function positionTriangle(element) {
@@ -79,7 +78,11 @@ function positionTriangle(element) {
     // triangle.style.top = '-69px';
 }
 
-positionTriangle(btn[0])
-block.style.height = elem[0].offsetHeight + 'px'
-img[0].style.opacity = "1"
+
+document.addEventListener('DOMContentLoaded', () => {
+    click();
+    positionTriangle(btn[0])
+    block.style.height = elem[0].offsetHeight + 'px';
+    img[0].style.opacity = "1";
+});
 
